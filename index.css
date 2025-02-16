@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.intro{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: black;
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+.cont{
+    position: absolute;
+    font-size:20px !important;
+    padding-left: 50px;
+    padding-right: 250px!important;
+    top: 115px;
+}
+.cont h1{
+    font-size: 80px!important;
+    color: white!important;
+    font-weight: bolder;
+}
+.cont p{
+    padding-right: 300px!important;
+    color: #ecdfd2!important;
+}
+.slider{
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes slide {
+    0%{right: 0;}
+   
+    50%{right: 30px;}
+   
+    100%{right: 0;}
+}
+.benifits{
+    min-height: 600px!important;
+    width: 100%;
+    /* background-color: rgb(255, 241, 223)!important; */
+}
+.benpic{
+    padding-left: 90px;
+    width: 80%;
+    height: 500px;
+    border-radius: 60%;
+    z-index: 2;
+}
+.benifits h1{
+    font-style:oblique;
+}
+.teaa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teat{
+    height: 600px;
+    width: 90%;
+    scale: .2;
+    opacity: 0;
+    animation: ttime linear forwards ;
+    animation-range:entry ;
+    animation-timeline: view();
+    animation-duration: 3s;
+}
+@keyframes ttime {
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}
+.zentea{
+    height: 300px!important;
+    width: 300px!important;
+    background-color:white!important;
+    background-image: url(./zen1.jpeg);
+    background-size: 300px 300px;
+    border-radius: 20px!important;
+    display: flex;
+    text-align: center!important;
+    justify-content: center!important;
+    align-items: center!important;
+    transition-duration:2s ;
+}
+.zentea h1{
+    opacity: 0;
+    font-style: oblique;
+}
+.empiretea{
+    height: 300px!important;
+    width: 300px!important;
+    background-image: url(./empire\ tea.avif);
+    background-size: 300px 300px;
+    border-radius: 20px!important;
+    background-color:white!important;
+    display: flex;
+    text-align: center!important;
+    justify-content: center!important;
+    align-items: center!important;
+    transition-duration:2s ;
+}
+.empiretea h1{
+    opacity: 0;
+    font-style: oblique;
+}
+.herbstea{
+    height: 300px!important;
+    width: 300px!important;
+    background-image: url(./herbs\ tea.avif);
+    background-size: 300px 300px;
+    border-radius: 20px!important;
+    background-color:white!important;
+    display: flex;
+    text-align: center!important;
+    justify-content: center!important;
+    align-items: center!important;
+    transition-duration:2s ;
+}
+.herbstea h1{
+    opacity: 0;
+    font-style: oblique;
+}
+.jasminetea{
+    height: 300px!important;
+    width: 300px!important;
+    background-image: url(./jasmine\ tea.webp);
+    background-size: 300px 300px;
+    border-radius: 20px!important;
+    background-color:white!important;
+    display: flex;
+    text-align: center!important;
+    justify-content: center!important;
+    align-items: center!important;
+    transition-duration:2s ;
+}
+.jasminetea h1{
+    opacity: 0;
+    font-style: oblique;
+}
+.zentea:hover{
+    background-image: none;
+    border: 2px black solid;
+    box-shadow: 0px 0px 5px red;
+    scale: 1.1;
+    cursor: pointer;
+}
+.zentea:hover h1{
+    opacity: 1;
+    cursor: pointer;
+    transition: 1s all;
+}
+.empiretea:hover{
+    background-image: none;
+    border: 2px black solid;
+    box-shadow: 0px 0px 5px orange;
+    scale: 1.1;
+    cursor: pointer;
+}
+.empiretea:hover h1{
+    opacity: 1;
+    cursor: pointer;
+    transition: 1s all;
+}
+.herbstea:hover{
+    background-image: none;
+    border: 2px black solid;
+    box-shadow: 0px 0px 5px green;
+    scale: 1.1;
+    cursor: pointer;
+}
+.herbstea:hover h1{
+    opacity: 1;
+    cursor: pointer;
+    transition: 1s all;
+}
+.jasminetea:hover{
+    background-image: none;
+    border: 2px black solid;
+    box-shadow: 0px 0px 5px purple;
+    scale: 1.1;
+    cursor: pointer;
+}
+.jasminetea:hover h1{
+    opacity: 1;
+    cursor: pointer;
+    transition: 1s all;
+}
+.discover{
+    /* background-color: rgb(218, 247, 166); */
+    min-height: 600px;
+    width: 100%;
+}
+.word{
+    padding-left: 230px!important;
+    padding-right: 230px!important;
+    font-size: 40px;
+    font-style: oblique;
+    padding-bottom: 30px!important;
+}
+.word b{
+    color: #74A662;
+}
+.magic1{
+    width: 90%;
+    height: 90%;
+    opacity: 0;
+    scale: .2;
+    animation: magic linear forwards ;
+    animation-range:entry ;
+    animation-timeline: view();
+    animation-duration: 3s;
+}
+@keyframes magic {
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}
+.popular{
+    /* background-color: rgb(218, 247, 166); */
+    min-height: 600px;
+    width: 100%;
+}
+.poppic{
+    height: 95%;
+    width: 10%;
+    animation: charpic linear forwards ;
+    animation-range:entry ;
+    animation-timeline: view();
+    animation-duration: 3s;
+}
+@keyframes charpic {
+    to{
+       width: 100%; 
+    }
+}
+.paratea{
+    width: 100%;
+    min-height: 430px;
+}
+.artt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arttea{
+    height: 300px;
+    max-width: 600px;
+    transition: 2s;
+    margin-bottom: 20px!important;
+    scale: 0.2;
+    opacity: 0;
+    animation: harpic linear forwards ;
+    animation-range:entry ;
+    animation-timeline: view();
+    animation-duration: 3s;
+}
+@keyframes harpic {
+    to{
+       scale: 1; 
+       opacity: 1;
+    }
+}
+.arttea:hover{
+    scale: 1.2;
+    cursor: pointer;
+}
+.teaimg{
+    width: 100%;
+    min-height:400px ;
+}
+.powder{
+    width: 50%;
+    height: 365px;
+}
+.pow{
+    padding-left: 160px!important;
+}
+.powder~p{
+    color: olive;
+    font-family: monospace;
+}
+.powder:hover{
+    scale: 1.015;
+    transition: 1s;
+    cursor: pointer;
+}
+.jug{
+    width: 90%;
+    height: 90%;
+}
+.jug~p{
+    color: olive;
+    font-family: monospace;
+}
+.jug:hover{
+    scale: 1.015;
+    transition: 2s;
+    cursor: pointer;
+}
+.insta{
+    width: 100%;
+    min-height: 300px;
+    /* background-color: #ecdfd2; */
+    color: olivedrab;
+    padding-top: 20px!important;
+    font-size: 20px!important;
+    font-style: italic;
+}
+.insimg{
+    height: 210px;
+    width: 210px;
+}
+.insimg:hover{
+    filter: grayscale(80%);
+    cursor: pointer;
+    scale: 1.111;
+    transition: all 1s;
+}
+.contact{
+    width: 100%;
+    min-height: 260px;
+    background-color: #74A662;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px!important;
+}
+.info p{
+    margin: 0px;
+}
+.log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px!important;
+}
+.log i{
+    font-size: 30px!important;
+    margin-left: 5px!important;
+    margin-right: 5px!important;
+}
+.log i:hover{
+    color: white;
+    cursor: pointer;
+    scale: 1.111;
+    transition: 1s all;
+}
+.log img{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+.hours{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px!important;
+}
+.hours p{
+    margin: 0px;
+}
+.navv{
+    width: 90%!important;
+    height: 70px!important;
+    background-color: #74A662;
+    position: fixed;
+    top: 20px;
+    left: 5%;
+    z-index: 10;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+.navlef{
+    width:35%;
+    height: 100%;
+    padding-left: 30px;
+}
+.navlef i{
+    display: none;
+}
+.navlog{
+    height: 60px;
+}
+.navlef b{
+    position: relative;
+    bottom: -7px;
+    font-family: "Dancing Script", cursive;
+}
+.righnav{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.righnav b{
+    position: relative;
+    width: max-content;
+    display: inline;
+}
+.righnav b::after{
+    content: '';
+    background:linear-gradient(to right ,green,black);
+    border-radius: 100px;
+    height: 5px;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 1s;
+    z-index: 999;
+}
+.righnav b:hover::after{
+    width: 100%;
+}
+.navv input{
+    display: none;
+}
+.imgfad{
+    overflow: hidden;
+}
+.navv{
+    overflow: hidden;
+}
+
+/* OVERFLOW ANIMATION */
+
+.over{
+    width: 100%;
+    height: 650px;
+    background-color: #74A662;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: overo;
+    animation-fill-mode: forwards;
+    animation-duration: 5.5s;
+    opacity: 0;
+    position: absolute;
+}
+@keyframes overo {
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 1;
+    }50%{
+        opacity: 1;
+    }75%{
+        opacity: 9;
+    }85%{
+        opacity: 8;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.giff{
+    width: 100%;
+    height: 100%;
+}
+.main,.navv{
+    opacity: 0;
+    animation-name: ma;
+    animation-delay: 4.8s;
+    animation-fill-mode: forwards;
+}
+@keyframes ma {
+    0%{opacity: 0;}
+    25%{opacity: 0;}
+    50%{opacity: 0;}
+    75%{opacity: 0;}
+    90%{opacity: 9;}
+    100%{opacity: 1;}
+}
+
+/* .arrow{
+    color: #74A662;
+    font-size: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 80px;
+    z-index: 8;
+} */
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width:800px) and (max-width:1150px) {
+    .slider{
+        height: 400px;
+        width: 500px;
+    }
+    .cont h1{
+        font-size: 40px!important;
+        color: white!important;
+        font-weight: bolder;
+    }
+    .cont p{
+        padding-right: 100px!important;
+        color: #ecdfd2!important;
+    }
+    .navlef{
+        width: 30%!important;
+    }
+    .righnav{
+        width: 60%!important;
+    }
+    
+}
+
+@media only screen and (max-width:992px) {
+    .zencol{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .slider{
+        display: none;
+    }
+    .cont h1{
+        font-size: 30px!important;
+        color: white!important;
+        font-weight: bolder;
+    }
+    .cont p{
+        font-size: 16px!important;
+        padding-right: 50px!important;
+        color: #ecdfd2!important;
+    }
+    .health{
+        padding-top: 50px!important;
+        padding-bottom: 50px!important;
+    }
+    .healpic{
+        padding-top: 150px!important;
+    }
+    .word{
+        padding-left: 90px!important;
+        padding-right: 90px!important;
+        padding-bottom: 30px!important;
+        font-size: 30px!important;
+    }
+    .righnav{
+        width: 60%!important;
+    }   
+}
+@media only screen and (max-width:550px) {
+    video{
+        height: 120%;
+    }
+    .intro{
+        height: 120vh;
+    }
+    .word{
+        padding-left: 50px!important;
+        padding-right: 50px!important;
+        padding-bottom: 20px!important;
+        font-size: 22px!important;
+    }
+    /* indha nav anga vandhuruchi ana namba click pana dha varala opacity one kuduthu partha theriyum so adha aparama paaru */
+    .righnav{
+        padding: 20px;
+        width: 25%;
+        border-radius: 20px;
+        min-height: 250px;
+        background-color: rgba(197, 175, 197, 0.459);
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        right: -200px;
+        top: 75px;
+        opacity: 0;
+        transition: all 1s;
+    }
+    .navv input:checked ~.righnav{
+        opacity: 1;
+        right: 20px;
+    }
+     .navv{
+        flex-direction: column;
+     }
+    .navlef{
+        width: 100%!important;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navlef i{
+        display: block;
+        float: right;
+        color: white;
+        font-size: 35px;
+        padding-top: 20px;
+    }
+}
+@media only screen and (max-width:500px) {
+    video{
+        height: 130%;
+        width: 125%;
+    }
+    .intro{
+        height: 130vh;
+    }
+    .cont{
+        padding-right: 10px;
+        padding-left: 50px;
+        margin: 0!important;
+        
+        }
+}
+@media only screen and (max-width:400px) {
+    video{
+        height: 104%;
+        width: 140%;
+        margin: 0!important;
+    }
+    .intro{
+        height: 135vh;
+        margin: 0!important;
+    }
+    .cont{
+    padding-right: 10px;
+    padding-left: 50px;
+    margin: 0!important;
+    }
+    .benifits{
+        width: 120%;
+        margin: 0!important;
+    }
+}
